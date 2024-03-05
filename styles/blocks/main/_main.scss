@@ -1,7 +1,9 @@
 .main {
-  background: var(--color-header) url("/images/bottom.jpg") no-repeat;
-  background-position: center;
+  //background: url("../../../images/background-bottom.png") var(--color-header) no-repeat;
+  background: url("https://fedisaev.github.io/employcity/images/background-bottom.png") var(--color-header) no-repeat;
 
+  background-position: center;
+  //https://username.github.io/repo-name/img/image.png
   &__inner {
     padding-block: 120px;
 
