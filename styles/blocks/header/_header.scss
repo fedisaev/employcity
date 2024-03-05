@@ -1,14 +1,14 @@
 .wrapper-top {
   max-height: 850px;
-  background: url("https://fedisaev.github.io/employcity/images/desktop.jpg") no-repeat center;
+  background: url("https://fedisaev.github.io/employcity/images/desktop.png") no-repeat center;
 
   @include tablet{
     max-height: 600px;
-    background: url("https://fedisaev.github.io/employcity/images/tablet.jpg") no-repeat center;
+    background: url("https://fedisaev.github.io/employcity/images/tablet.png") no-repeat center;
   }
 
   @include mobile{
-    background: url("https://fedisaev.github.io/employcity/images/mobile.jpg") no-repeat center;
+    background: url("https://fedisaev.github.io/employcity/images/mobile.png") no-repeat center;
     background-size: 800px;
     max-height: 500px;
   }
