@@ -1,0 +1,38 @@
+.order{
+  &-item{
+    &__file {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+
+    &__file-label {
+      font-size: 15px;
+      background: var(--color-white);
+      color: var(--color-file);
+      display: block;
+      width: 100%;
+      padding: 12px;
+      justify-content: center;
+      border-radius: var(--border-radius-button);
+      cursor: pointer;
+
+      @include mobile {
+        margin-bottom: 10px;
+      }
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}

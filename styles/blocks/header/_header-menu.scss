@@ -1,0 +1,25 @@
+.header{
+  &__menu {
+    font-size: 13px;
+
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 60px;
+      text-transform: uppercase;
+
+      @include desktop {
+        column-gap: 30px;
+      }
+    }
+
+    &-link {
+      position: relative;
+
+      @include hover{
+        color: var(--color-blue);
+        cursor: pointer;
+      }
+    }
+  }
+}

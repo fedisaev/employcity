@@ -1,0 +1,56 @@
+.section-top {
+  padding-block: 200px;
+  color: var(--color-black);
+
+  @include tablet {
+    padding-block: 130px;
+  }
+
+  &__body {
+    max-width: 780px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+
+    @include tablet {
+      max-width: 500px;
+      row-gap: 50px;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+
+    span {
+      color: var(--color-blue)
+    }
+
+    @include mobile{
+      font-size: 20px;
+    }
+  }
+
+  &__subtitle {
+    h4 {
+      margin: 0 0 5px;
+    }
+  }
+
+  &__buttons {
+    margin-bottom: 210px;
+
+    @include tablet {
+      margin-bottom: 120px;
+    }
+
+    button {
+      width: 183px;
+      margin-right: 30px;
+
+      @include mobile{
+        width: 120px;
+        margin-right: 15px;
+      }
+    }
+  }
+}

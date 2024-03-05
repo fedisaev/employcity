@@ -1,0 +1,55 @@
+.main{
+  &__row {
+    display: flex;
+    padding-block: 80px;
+
+    @include tablet {
+      padding-block: 50px;
+    }
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__column {
+    padding: 0 27px;
+    flex: 0 0 20%;
+
+    @include tablet {
+      padding: 0 1px;
+    }
+
+    @include mobile {
+      padding: 10px 1px;
+    }
+  }
+
+  &-item {
+    @include mobile {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+
+    &__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 20px;
+
+      img {
+        @include mobile {
+          width: 75px;
+        }
+      }
+    }
+
+    &__text {
+      text-align: center;
+      line-height: 19.2px;
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+}

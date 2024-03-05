@@ -1,0 +1,49 @@
+.main {
+  background: var(--color-header) url("/images/bottom.jpg") no-repeat;
+  background-position: center;
+
+  &__inner {
+    padding-block: 120px;
+
+    @include tablet {
+      padding-block: 60px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    line-height: 43.2px;
+    font-weight: 800;
+    padding-bottom: 30px;
+
+    @include tablet {
+      padding-bottom: 20px;
+    }
+
+    @include mobile {
+      font-size: 20px;
+    }
+
+    span {
+      color: var(--color-blue);
+    }
+  }
+
+  &__text {
+    color: var(--color-light-gray);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+
+    @include mobile {
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+}

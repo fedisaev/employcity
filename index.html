@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon"
+          href="data:image/png;base64,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">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Employ City</title>
+    <script defer src="scripts/range.js"></script>
+</head>
+<body>
+
+<header class="wrapper-top">
+    <section class="header fixed">
+        <div class="header__inner container">
+            <a href="#" class="header__logo logo">
+                <h3>LOREMIPSUM.<span>NET</span></h3>
+            </a>
+            <nav class="header__menu hidden-mobile">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Бизнес</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">О нас</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Цены</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Оформить заказ</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="burger-button visible-mobile"
+                    type="button"
+                    onclick="mobileOverlay.showModal()"
+            >
+                <span class="visually-hidden">Open navigation menu</span>
+            </button>
+        </div>
+    </section>
+    <section class="section-top container">
+        <div class="section-top__body">
+            <h1 class="section-top__title">
+                <span>Lorem ipsum</span> dolor sit ametconsectetur <span>adipisicing</span>
+            </h1>
+            <div class="section-top__subtitle">
+                <h4>At vero eos et accusamus et iusto odio dignissimos ducimus!</h4>
+                <ul class="section-top__list">
+                    <li>- Totam rem aperiam eaque ipsa</li>
+                    <li>- Sit voluptatem accusantium doloremque laudantium</li>
+                    <li>- Sed ut perspiciatis, unde omnis iste natus error</li>
+                </ul>
+            </div>
+            <div class="section-top__buttons">
+                <button type="button" class="button">ЗАКАЗАТЬ</button>
+                <button type="button" class="button">ПОДРОБНЕЕ</button>
+            </div>
+        </div>
+    </section>
+</header>
+
+
+<main class="main">
+    <div class="main__inner container">
+        <section class="main__header">
+            <h2 class="main__title">Оформление <span>Заказа</span></h2>
+            <p class="main__text">
+                Перед заполнением формы ознакомьтесь с нашей схемой работы!
+            </p>
+        </section>
+        <section class="main__row">
+            <div class="main__column">
+                <div class="main-item">
+                    <div class="main-item__icon">
+                        <img src="./icons/main/icon-1.png" alt="icon-1">
+                    </div>
+                    <p class="main-item__text">
+                        Lorem ipsum dolor sit amet
+                    </p>
+                </div>
+            </div>
+            <div class="main__column">
+                <div class="main-item">
+                    <div class="main-item__icon">
+                        <img src="./icons/main/icon-2.png" alt="icon-2">
+                    </div>
+                    <p class="main-item__text">
+                        Сonsectetura dipiscing elit
+                    </p>
+                </div>
+            </div>
+            <div class="main__column">
+                <div class="main-item">
+                    <div class="main-item__icon">
+                        <img src="./icons/main/icon-3.png" alt="icon-3">
+                    </div>
+                    <p class="main-item__text">
+                        Sed do eiusmod tempor
+                    </p>
+                </div>
+            </div>
+            <div class="main__column">
+                <div class="main-item">
+                    <div class="main-item__icon">
+                        <img src="./icons/main/icon-4.png" alt="icon-4">
+                    </div>
+                    <p class="main-item__text">
+                        Esse cillum dolore eu fugiat
+                    </p>
+                </div>
+            </div>
+            <div class="main__column">
+                <div class="main-item">
+                    <div class="main-item__icon">
+                        <img src="./icons/main/icon-5.png" alt="icon-5">
+                    </div>
+                    <p class="main-item__text">
+                        Excepteur sint occaecat cupidatat non proident
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="order">
+            <form class="order__form">
+                <div class="order-item">
+                    <label>
+                        <select name="type" class="order-item__select">
+                            <option selected disabled hidden>Выберите тип системы</option>
+                            <option value="Sed ut perspiciatis">Sed ut perspiciatis</option>
+                            <option value="Nemo enim ipsam">Nemo enim ipsam</option>
+                            <option value="Et harum quidem">Et harum quidem</option>
+                            <option value="Temporibus autem">Temporibus autem</option>
+                            <option value="Itaque earum rerum">Itaque earum rerum</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="order-item">
+                    <label>
+                        <input name="email"
+                               class="order-item__input"
+                               type="email"
+                               placeholder="Ваш email"
+                               required
+                        >
+                    </label>
+                </div>
+                <div class="order-item">
+                    <label>
+                        <input name="name"
+                               class="order-item__input"
+                               placeholder="Ваше имя"
+                               required
+                        >
+                    </label>
+                </div>
+                <div class="order-item range">
+                    <label class="order-item__label">
+                            <span>
+                                <span class="order-item__text">Sed ut perspiciatis, unde omnis iste natus</span>
+                                <span class="order-item__percentage">75%</span>
+                            </span>
+                        <input value="75" class="order-item__range" type="range" onchange="updatePercentage(this)">
+                    </label>
+                </div>
+                <div class="order-item">
+                    <label class="order-item__file-label">
+                        <span><img src="icons/main/file.png" alt="icon-file">ПРИКРЕПИТЬ ФАЙЛ</span>
+                        <input class="order-item__file" type="file">
+                    </label>
+                </div>
+                <div class="order__button">
+                    <button class="button" type="submit">
+                        ОТПРАВИТЬ
+                    </button>
+                </div>
+            </form>
+        </section>
+    </div>
+</main>
+
+<footer class="footer-wrapper">
+    <section class="footer container">
+        <div class="footer__inner">
+            <p class="footer__copyright">
+                &copy;<time datetime="2018">2018</time>
+                «LOREMIPSUM.NET» Все права защищены.
+            </p>
+            <div class="footer__payment">
+                <ul class="footer__payment-list">
+                    <li class="footer__payment-item">
+                        <img src="icons/footer/qiwi.png" alt="icon-qiwi">
+                        <p>QIWI wallet</p>
+                    </li>
+                    <li class="footer__payment-item">
+                        <img src="icons/footer/yandex.png" alt="icon-yandex">
+                        <p>Yandex Money</p>
+                    </li>
+                    <li class="footer__payment-item">
+                        <img src="icons/footer/web.png" alt="icon-web">
+                        <p>Web Money</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__social">
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a href="mailto:info@ipsum228.com" class="footer__social-link">
+                            <img src="icons/footer/email.png" alt="icon-email">
+                            <p>info@ipsum228.com</p>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="https://vk.com" class="footer__social-link" target="_blank">
+                            <img src="icons/footer/vk.png" alt="icon-vk">
+                            <p>Мы вконтакте</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</footer>
+
+<dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+    <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button class="mobile-overlay__close-button cross-button" type="submit">
+            <span class="visually-hidden">Close navigation menu</span>
+        </button>
+    </form>
+    <div class="mobile-overlay__body">
+        <ul class="mobile-overlay__list">
+            <li class="mobile-overlay__item">
+                <a href="#" class="mobile__overlay__link">Бизнес</a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a href="#" class="mobile__overlay__link">О нас</a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a href="#" class="mobile__overlay__link">Цены</a>
+            </li>
+            <li class="mobile-overlay__item">
+                <a href="#" class="mobile__overlay__link">Оформить заказ</a>
+            </li>
+        </ul>
+    </div>
+</dialog>
+
+</body>
+</html>

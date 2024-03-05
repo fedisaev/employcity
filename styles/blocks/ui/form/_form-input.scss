@@ -1,0 +1,16 @@
+.order{
+  &-item{
+    &__input {
+      width: 100%;
+      height: 48px;
+      border: none;
+      border-radius: var(--border-radius-button);
+      padding: 0 10px;
+      outline: none;
+
+      @include mobile {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

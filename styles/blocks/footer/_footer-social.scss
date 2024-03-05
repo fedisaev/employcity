@@ -1,0 +1,15 @@
+.footer{
+  &__social {
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 38px;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
+  }
+}

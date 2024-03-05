@@ -1,0 +1,26 @@
+:root {
+  --color-blue: rgba(62, 156, 220, 1);
+  --color-bold-blue: #286690;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-footer: #3D4050;
+  --color-gray: #6F6D7B;
+  --color-light-gray: #BBBBBB;
+  --color-header: rgba(16, 16, 29, 0.9);
+  --color-file: rgba(39, 39, 51, 1);
+
+
+  --border-white: 1px solid var(--color-white);
+  --border-gray: 1px solid var(--color-gray);
+  --border-blue: 5px solid var(--color-bold-blue);
+  --border-radius-button: 4px;
+
+  --font-family-base: 'Lato', sans-serif;
+
+  --container-width: 1172px;
+  --container-padding-x: 20px;
+
+  --button-height: 43px;
+
+  --transition-duration: 0.2s;
+}
